@@ -12,7 +12,7 @@ export class Library implements ILibrary {
     }
 
     addBook(book: Book):void{
-        this.books.concat(book);
+        this.books.push(book);
     }
     removeBook(id:string):void{
         let index = this.books.findIndex(book => book.id = id);
